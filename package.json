@@ -6,13 +6,20 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:simulator:android": "eas build --profile development:simulator --platform ios --message $(git symbolic-ref --short HEAD) --local",
+    "build:simulator:ios": "eas build --profile development:simulator --platform ios --message $(git symbolic-ref --short HEAD) --local",
+    "build:device:android": "eas build --profile development:device --platform android --message $(git symbolic-ref --short HEAD) --local",
+    "build:device:ios": "eas build --profile development:device --platform ios --message $(git symbolic-ref --short HEAD) --local"
   },
   "dependencies": {
     "expo": "~52.0.43",
+    "expo-asset": "~11.0.5",
+    "expo-dev-client": "~5.0.19",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
-    "react-native": "0.76.9"
+    "react-native": "0.76.9",
+    "rive-react-native": "^9.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
