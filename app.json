@@ -29,7 +29,12 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-asset"
+      [
+        "expo-asset",
+        {
+          "assets": ["assets/rive/weather_app.riv"]
+        }
+      ]
     ],
     "extra": {
       "eas": {
