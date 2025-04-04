@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bkomen.exporive"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,7 +33,9 @@
       [
         "expo-asset",
         {
-          "assets": ["assets/rive/weather_app.riv"]
+          "assets": [
+            "assets/rive/weather_app.riv"
+          ]
         }
       ]
     ],

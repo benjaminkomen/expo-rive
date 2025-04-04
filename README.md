@@ -95,7 +95,7 @@ module.exports = config;
 - To your package.json scripts section, add the following build scripts:
 
 ```
-"build:simulator:android": "eas build --profile development:simulator --platform ios --message $(git symbolic-ref --short HEAD) --local",
+"build:simulator:android": "eas build --profile development:simulator --platform android --message $(git symbolic-ref --short HEAD) --local",
 "build:simulator:ios": "eas build --profile development:simulator --platform ios --message $(git symbolic-ref --short HEAD) --local",
 "build:device:android": "eas build --profile development:device --platform android --message $(git symbolic-ref --short HEAD) --local",
 "build:device:ios": "eas build --profile development:device --platform ios --message $(git symbolic-ref --short HEAD) --local"
