@@ -29,16 +29,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-asset",
-        {
-          "assets": [
-            "assets/rive/weather_app.riv"
-          ]
-        }
-      ]
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
         "projectId": "67ff31ba-3690-4117-9e8d-369198fed76c"

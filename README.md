@@ -27,18 +27,6 @@ To create a project like this from scratch, follow these steps.
   example app we will use
   this [weather animation](https://github.com/rive-app/weather-app-mobile/blob/main/WeatherApp/ios/Assets/weather_app.riv)
 - Put the file in the `assets/rive/` folder
-- In your `app.json` file modify the plugins section to be something like this:
-
-```json
-"plugins": [
-[
-"expo-asset",
-{
-"assets": ["assets/rive/weather_app.riv"]
-}
-]
-],
-```
 
 > [!NOTE]
 > Expo added support for Rive assets in this [commit](https://github.com/expo/expo/pull/35758), it will be available in
@@ -59,6 +47,7 @@ module.exports = config;
 
 - Wrap your Rive component with the `RiveAnimation.tsx` file in this project and use `source` as the prop with your file
   name
+- You can hot-reload your `*.riv` file, no need to create a new build, because the asset is served by the Metro server
 
 ### Expo development build setup
 
